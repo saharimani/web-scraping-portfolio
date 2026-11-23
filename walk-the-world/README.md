@@ -21,9 +21,9 @@ Iran -> Azerbaijan -> Russia -> Poland -> Germany -> France
 ## Layout
 
 ```
-WalkTheWorld/
-├── WalktheWorld.ipynb   code, explanations and example runs
-└── Readme.md
+walk-the-world/
+├── walk_the_world.ipynb  code, explanations and example runs
+└── README.md
 ```
 
 ## Known issues

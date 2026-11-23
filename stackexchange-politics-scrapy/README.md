@@ -16,21 +16,21 @@ Fields are defined in `items.py` and collected with an `ItemLoader`.
 ## Layout
 
 ```
-StackExchangeAnalysis/
+stackexchange-politics-scrapy/
 ├── scrapy.cfg
 ├── StackExPolitics/
 │   ├── items.py              fields scraped per question
 │   ├── settings.py           robots.txt obeyed, UTF-8 feed export
 │   ├── pipelines.py, middlewares.py   Scrapy defaults
 │   └── spiders/StackExPoliticsSpider.py
-└── StackExchangePoliticsSubforumProject.ipynb   cleaning, EDA and regression
+└── politics_analysis.ipynb   cleaning, EDA and regression
 ```
 
 Run it, with the archive served locally:
 
 ```bash
 pip install scrapy
-cd StackExchangeAnalysis
+cd stackexchange-politics-scrapy
 scrapy crawl StackExPoliticsSpider -O stackexpoliticdata.csv
 ```
 

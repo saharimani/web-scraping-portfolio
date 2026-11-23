@@ -9,6 +9,12 @@ A scraper that builds a country-level dataset from Wikipedia: area, water share,
 - Missing fields are recorded as `"Not available"`, and the results are written to `countries_data.csv`.
 - Requests are sent one at a time, using `requests` and `lxml`.
 
+```
+wikipedia-country-economics/
+├── scraper.py                         the scraper (python scraper.py -> countries_data.csv)
+└── country_economics_analysis.ipynb   the same scraper as run, then cleaning, EDA and OLS
+```
+
 ## Analysis (notebook)
 
 1. **Cleaning:** "Not available" becomes NaN, "negligible" water area becomes 0, GDP strings are converted to trillions, and numbers are pulled out of text.
